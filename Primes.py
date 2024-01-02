@@ -36,7 +36,23 @@ class Primes():
                 return True
 
     def reverse_number(self, number):
+        '''
+        Reverse an integer
+        :param number:
+        :return int: reversed integer
+        '''
         return int(reversed(str(number)))
+
+    def emirp(self, number):
+        '''
+        Prints the number if it is a emirp number
+        :param number:
+        :return int: the number if it is a emirp number
+        '''
+        if self.is_prime(number) and self.is_prime(self.reverse_number(number)):
+            print(number)
+
+
 
 
 
