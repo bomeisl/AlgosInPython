@@ -18,7 +18,9 @@ class Primes():
         elif number in self.primes_list:
             return True
         else:
-            return self.prime_test(number)
+            if self.prime_test(number):
+                self.primes_list.append()
+                return True
 
     def prime_test(self, number):
         '''
