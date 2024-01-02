@@ -50,7 +50,8 @@ class Primes():
         :return int: the number if it is a emirp number
         '''
         if self.is_prime(number) and self.is_prime(self.reverse_number(number)):
-            print(number)
+            self.emirp_list.append(number)
+            return number
 
     def first_N_emirps(self, n):
         '''
