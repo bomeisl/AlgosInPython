@@ -6,6 +6,7 @@ class Primes():
     Created by Kyle Bomeisl 1/2/2024
     '''
     primes_list=[]
+    emirp_list=[]
 
     def is_prime(self, number):
         '''
@@ -51,6 +52,19 @@ class Primes():
         '''
         if self.is_prime(number) and self.is_prime(self.reverse_number(number)):
             print(number)
+
+    def first_N_emirps(self, n):
+        i = 0
+        number = 2
+        while i<5:
+            if self.emirp(number):
+                self.emirp_list.append(number)
+                number+=1
+                i+=1
+            else:
+                number+=1
+        return self.emirp_list
+
 
 
 
