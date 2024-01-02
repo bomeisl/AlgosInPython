@@ -1,6 +1,3 @@
-import this
-
-
 class Primes():
     '''
     Created by Kyle Bomeisl 1/2/2024
