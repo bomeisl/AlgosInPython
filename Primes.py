@@ -46,7 +46,7 @@ class Primes():
 
     def emirp(self, number):
         '''
-        Prints the number if it is a emirp number
+        Prints the number if it is a number is prime and also prime when reversed
         :param number:
         :return int: the number if it is a emirp number
         '''
@@ -54,6 +54,11 @@ class Primes():
             print(number)
 
     def first_N_emirps(self, n):
+        '''
+        Returns the first N prime numbers that are also prime when reversed
+        :param n:
+        :return list<int>: the first N prime numbers that are also prime when reversed
+        '''
         i = 0
         number = 2
         while i<5:
